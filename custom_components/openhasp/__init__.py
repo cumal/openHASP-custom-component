@@ -120,7 +120,7 @@ OBJECT_SCHEMA = vol.Schema(
         vol.Optional(CONF_TRACK, default=None): vol.Any(cv.entity_id, None),
         vol.Optional(CONF_PROPERTIES, default={}): PROPERTY_SCHEMA,
         vol.Optional(CONF_EVENT, default={}): EVENT_SCHEMA,
-        vol.Optional(CONF_SUBTOPIC, default=None): cv.string,
+        vol.Optional(CONF_SUBTOPIC): cv.string,
     }
 )
 
